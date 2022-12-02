@@ -44,14 +44,9 @@ body {
 .main {
   background: lightgreen;
   height: 50vh;
-  display: flow-root;
+  display: flex;
+  flex-direction: row;
   /* overflow는 넘치는 영역 */
-  padding: 0 15px;
-}
-
-.group {
-  margin: 0 15px;
-  float: left;
 }
 
 .group1 {
