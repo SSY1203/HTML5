@@ -29,9 +29,36 @@ body {
 }
 /* * 헤더 */
 .header {
-  background: pink;
+  background: #fff;
   padding: 0 30px;
   height: 15vh;
+  border-radius: 0 0 15px 15px;
+}
+
+.member {
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+/* * :before / ::before ⇒ first child */
+/* * :after / ::after ⇒ last child */
+
+/* * 우선순위 규칙 */
+/* * li (Type Selector) - 1점 */
+/* * .first (Class Selector) - 10점 */
+/* * #item (ID Selector) - 100점 */
+
+/* * .member -> 10점, li -> 1점, ::before -> 1점 === 12점 */
+.member li::before {
+  content: ':';
+}
+
+/* * .member -> 10점, .first -> 10점, ::before -> 1점 === 21점 */
+/* * !important는 무조건 우선순위 1위 */
+.member .first::before {
+  content: '';
 }
 
 /* * 비주얼 */
