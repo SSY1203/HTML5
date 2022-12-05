@@ -45,20 +45,26 @@ body {
 /* * :before / ::before ⇒ first child */
 /* * :after / ::after ⇒ last child */
 
+/* * 겹침 Cascading */
 /* * 우선순위 규칙 */
 /* * li (Type Selector) - 1점 */
 /* * .first (Class Selector) - 10점 */
 /* * #item (ID Selector) - 100점 */
 
 /* * .member -> 10점, li -> 1점, ::before -> 1점 === 12점 */
-.member li::before {
+/* .member li::before {
   content: ':';
-}
+} */
 
 /* * .member -> 10점, .first -> 10점, ::before -> 1점 === 21점 */
 /* * !important는 무조건 우선순위 1위 */
-.member .first::before {
+/* .member .first::before {
   content: '';
+} */
+
+.member li:nth-child(n + 2)::before {
+  content: ':';
+  background-color: skyblue;
 }
 
 /* * 비주얼 */
