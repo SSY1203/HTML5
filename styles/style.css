@@ -3,9 +3,14 @@
 
 /** 숨김 콘텐츠 */
 .a11y-hidden {
-  background-color: yellow;
   position: absolute;
-  top: -10px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /** 구형 버전 */
+  /* clip: rect(0 0 0 0); */
+  /** 최신 버전 */
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /** 기본 스타일 */
