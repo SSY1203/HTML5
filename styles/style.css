@@ -104,7 +104,14 @@ body {
 }
 
 .menu {
+  border-top: 2px solid currentColor;
+  /* border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #212121; */
   background: #e85e2c linear-gradient(to bottom, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
+  border-radius: 0 0 5px 5px;
+  display: flow-root;
+  padding-left: 230px;
 }
 
 /* background-color → 배경색
@@ -115,6 +122,17 @@ background-attachment → 배경 이미지 고정 여부
 background-size → 배경 이미지 크기 조정
 
 background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구분 */
+
+.menu-item {
+  background-color: aqua;
+  float: left;
+}
+
+.sub-menu {
+  background-color: pink;
+  position: absolute;
+  display: none;
+}
 
 /** 비주얼 */
 .visual {
