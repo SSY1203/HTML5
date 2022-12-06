@@ -1,6 +1,13 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/** 숨김 콘텐츠 */
+.a11y-hidden {
+  background-color: yellow;
+  position: absolute;
+  top: -10px;
+}
+
 /** 기본 스타일 */
 /* 모든 요소의 첫 번째 자식 생성 후 상속 - before, 마지막 자식 생성 후 상속 - after */
 *,
