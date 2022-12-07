@@ -128,6 +128,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   border-left: 2px solid #fff;
 }
 
+/** 구체성 점수 → 10점 */
 .menu-button {
   border: 0;
   background: transparent;
@@ -137,6 +138,17 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   font-weight: 700;
   color: #fff;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+/** 구체성 점수 → 20점 */
+.is-active .menu-button {
+  color: #ff0;
+}
+
+.is-active .menu-button::after {
+  content: '';
+  border-top: 2px solid #212121;
+  display: block;
 }
 
 .sub-menu {
