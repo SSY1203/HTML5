@@ -112,6 +112,7 @@ body {
   border-radius: 0 0 5px 5px;
   padding-left: 230px;
   height: 47px;
+  position: relative;
 }
 
 /* background-color → 배경색
@@ -123,8 +124,11 @@ background-size → 배경 이미지 크기 조정
 
 background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구분 */
 
-.menu-item {
+.menu > li:nth-child(-n + 3) {
   position: relative;
+}
+
+.menu-item {
   float: left;
   border-left: 2px solid #fff;
 }
@@ -155,17 +159,35 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 .sub-menu {
   background-color: pink;
   position: absolute;
-  left: 0;
   top: 47px;
   display: none;
 }
 
+/** 왼쪽 기준으로 sub-menu를 정렬 */
+.menu-html,
+.menu-css,
+.menu-standards {
+  left: 0;
+}
+
+/** 오른쪽 기준으로 sub-menu를 정렬 */
+.menu-accessibility,
+.menu-qna,
+.menu-archive {
+  right: 0;
+}
+
 .is-active .sub-menu {
   display: block;
+  /** white-space는 공백 요소를 처리하는 속성 */
+  /** nowrap : 공백을 여러개 넣어도 1개만 표시되고, 텍스트가 길어도 줄바꿈 되지 않고 같은 줄에 계속 표시 된다. */
+  white-space: nowrap;
 }
 
 .sub-menu li {
   display: inline-block;
+  padding-left: 1em;
+  background-color: gold;
 }
 
 /** 비주얼 */
