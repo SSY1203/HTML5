@@ -226,9 +226,25 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 /** 비주얼 */
+
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+
 .visual {
-  background: orange;
-  height: 10vh;
+  background: pink;
+  height: 120px;
+}
+
+.visual-text {
+  background-color: coral;
+  animation-name: moveEffect;
+  animation-duration: 2000ms;
 }
 
 /** 메인 */
