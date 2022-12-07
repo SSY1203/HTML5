@@ -204,8 +204,10 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   text-transform: none;
   line-height: 1em;
   margin-left: 0.2em;
-  /** font-smoothing이란? */
+  /** font-smoothing이란? 부드러운 폰트를 렌더링하기 위한 속성( 초기값 안티앨리어싱 )*/
+  /** 안티앨리어싱 속성은 폰트가 부드럽게 보이게 한다. 하지만 선명함은 떨어질 수 있다. */
   -webkit-font-smoothing: antialiased;
+  /** 아래 font-smoothing 속성은 firefox 브라우저에도 적용하기 위한 방법이다. */
   -moz-osx-font-smoothing: grayscale;
 }
 /**마우스를 올렸을 때 선택자로 가란 뜻 */
