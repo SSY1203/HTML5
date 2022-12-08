@@ -232,6 +232,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 /** 비주얼 */
+<<<<<<< HEAD
 @keyframes moveEffect {
   0% {
     font-size: 12px;
@@ -242,16 +243,36 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
     font-size: 24px;
     color: hsla(0, 0%, 0%, 1);
     transform: translate(400px, 75px);
+=======
+/** at sign rule */
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.2);
+    transform: translate(0, 0);
+    /* transform: scale(0.5); */
+  }
+  100% {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    transform: translate(400px, 75px);
+    /* transform: scale(1); */
+>>>>>>> 0fe2593d7fa48b305d07bb56bbd798b548c80beb
   }
 }
 
 .visual {
+<<<<<<< HEAD
+=======
+  background: pink;
+>>>>>>> 0fe2593d7fa48b305d07bb56bbd798b548c80beb
   height: 120px;
   position: relative;
 }
 
 .visual-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
+<<<<<<< HEAD
   animation-name: moveEffect;
   animation-duration: 3000ms;
   animation-timing-function: ease-in-out;
@@ -259,6 +280,15 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   animation-fill-mode: forwards;
   /* display: inline-block; */
   position: absolute;
+=======
+  background-color: coral;
+  animation-name: moveEffect;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  /* font-size: 24px;
+  transform-origin: left top; */
+>>>>>>> 0fe2593d7fa48b305d07bb56bbd798b548c80beb
 }
 
 /** 메인 */
