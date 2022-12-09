@@ -427,12 +427,10 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: 0.2em;
   text-align: center;
   font-variant: normal;
   text-transform: none;
   line-height: 1em;
-  margin-left: 0.2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
