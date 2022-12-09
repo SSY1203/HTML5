@@ -314,7 +314,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   display: flow-root;
   border-radius: 15px 15px 0 0;
   /* overflow는 넘치는 영역 */
-  padding: 30px 15px;
+  padding: 0px 15px;
 }
 
 .group {
@@ -435,9 +435,33 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   -moz-osx-font-smoothing: grayscale;
 }
 
-/** 유효성 배너 */
-.validation {
-  padding: 25px 0 20px 0;
+/** 유효성 검사 배너 */
+.validation-list {
+  margin-top: 25px;
+}
+
+.validation-list li {
+  margin-top: 10px;
+}
+
+.validation-list a {
+  background: url('./images/validation_icon.png') no-repeat 25px 50%,
+    #ccc linear-gradient(to bottom, #ccc 0%, #ccc 30%, #eee 90%, #eee 100%);
+  padding: 8px 48px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  display: block;
+}
+
+/* .validation-list a::before {
+  content: url('./images/validation_icon.png');
+  vertical-align: middle;
+  margin-right: 5px;
+} */
+
+.validation-list a:hover,
+.validation-list a:focus {
+  color: #f00;
 }
 
 /** 슬로건 */
