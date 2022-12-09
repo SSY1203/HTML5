@@ -435,6 +435,11 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   -moz-osx-font-smoothing: grayscale;
 }
 
+/** 유효성 배너 */
+.validation {
+  padding: 25px 0 20px 0;
+}
+
 /** 슬로건 */
 .slogan {
   background: skyblue;
