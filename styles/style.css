@@ -308,20 +308,20 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 /** 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
+  background: #fff;
+  min-height: 450px;
   display: flow-root;
+  border-radius: 15px 15px 0 0;
   /* overflow는 넘치는 영역 */
-  padding: 0 15px;
+  padding: 30px 15px;
 }
 
 .group {
-  margin: 0 15px;
+  margin: 30px 15px;
   float: left;
 }
 
 .group1 {
-  background-color: violet;
   width: 250px;
   /* relative는 좌표로 움직일 수 있는 상태 */
   /* position: relative; */
@@ -336,6 +336,71 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 .group3 {
   background-color: gold;
   width: 190px;
+}
+
+/** 로그인 */
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: #ef9126 radial-gradient(circle at right top, #ef9126, #e85e2c);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.login-title {
+  /* margin-left: 10px; */
+  font-weight: 700;
+  color: yellow;
+  font-size: 15px;
+  text-indent: 0.5em;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  height: 60px;
+}
+
+.login-form fieldset {
+  border-bottom: 1px solid #212121;
+  padding-bottom: 10px;
+}
+
+.login-form legend {
+  display: none;
+}
+
+.user-email,
+.user-pw {
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.login-form input {
+  width: 90px;
+  display: inline-block;
+}
+
+.button-login {
+  width: 50px;
+  height: 50px;
+  background-color: #e85e2c;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
 }
 
 /** 슬로건 */
