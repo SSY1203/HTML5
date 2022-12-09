@@ -3,7 +3,8 @@
 @import url(./fonts.css);
 
 /** 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -344,45 +345,47 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   background: #ef9126 radial-gradient(circle at right top, #ef9126, #e85e2c);
   border-radius: 5px;
   padding: 10px;
-  font-size: 14px;
 }
 
 .login-title {
-  /* margin-left: 10px; */
-  font-weight: 700;
-  color: yellow;
+  color: #ff0;
   font-size: 15px;
-  text-indent: 0.5em;
+  font-weight: 700;
+  text-indent: 10px;
 }
 
 .login-form {
   background-color: #fff;
-  border-radius: 5px 5px 0 0;
   margin-top: 10px;
-  padding: 10px;
-  position: relative;
-  height: 60px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0px 10px;
 }
 
-.login-form fieldset {
-  border-bottom: 1px solid #212121;
-  padding-bottom: 10px;
+.user-email {
+  background-color: skyblue;
 }
 
-.login-form legend {
-  display: none;
-}
-
-.user-email,
 .user-pw {
-  height: 25px;
-  display: flex;
-  align-items: center;
+  background-color: lime;
+}
+
+.login-form label {
+  background-color: salmon;
+  width: 4em;
+  display: inline-block;
 }
 
 .login-form input {
   width: 90px;
-  display: inline-block;
+  height: 20px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+}
+
+.login-form fieldset {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  padding: 0 0 10px 0;
 }
 
 .button-login {
@@ -394,13 +397,41 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   border-radius: 2px;
   font-size: 13px;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  top: 0;
+  right: 0;
+}
+
+.user-email,
+.user-pw {
+  height: 25px;
 }
 
 .sign {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.sign li::before {
+  color: #e85e2c;
+  content: '\e803';
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /** 슬로건 */
