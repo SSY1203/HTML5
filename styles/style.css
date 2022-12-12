@@ -38,16 +38,18 @@ body {
   /** em, rem 단위를 사용해보기 */
   color: #212121;
   font-size: 1.4rem;
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-    Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   /* background-color: #ccc;
   background-image: url('./images/bg_flower.png'),
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
   background-repeat: no-repeat, repeat;
   background-position: 50% 0, 0 0; */
-  background: url('./images/bg_flower.png') no-repeat 50% 0,
-    #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) repeat 0 0;
+  background: url("./images/bg_flower.png") no-repeat 50% 0,
+    #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%)
+      repeat 0 0;
 }
 
 /** 레이아웃 */
@@ -117,7 +119,14 @@ body {
   /* border-top-width: 2px;
   border-top-style: solid;
   border-top-color: #212121; */
-  background: #e85e2c linear-gradient(to bottom, #ef9126 0%, #e85e2c 35%, #e85e2c 70%, #ef9126 100%);
+  background: #e85e2c
+    linear-gradient(
+      to bottom,
+      #ef9126 0%,
+      #e85e2c 35%,
+      #e85e2c 70%,
+      #ef9126 100%
+    );
   border-radius: 0 0 5px 5px;
   padding-left: 230px;
   height: 47px;
@@ -160,7 +169,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 .is-active .menu-button::after {
-  content: '';
+  content: "";
   display: block;
   border-top: 2px solid #212121;
 }
@@ -198,8 +207,8 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 .sub-menu a::before {
-  content: '\e805';
-  font-family: 'fontello';
+  content: "\e805";
+  font-family: "fontello";
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
@@ -219,7 +228,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 /**마우스를 올렸을 때 선택자로 가란 뜻 */
 .sub-menu a:hover::before,
 .sub-menu a:focus::before {
-  content: '\e801';
+  content: "\e801";
 }
 
 .sub-menu a {
@@ -266,7 +275,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 .visual::before,
 .visual::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -281,18 +290,18 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 .visual::before {
-  background: url('./images/ani_flower_01.png') no-repeat 10% 40%,
-    url('./images/ani_flower_03.png') no-repeat 70% 30%;
+  background: url("./images/ani_flower_01.png") no-repeat 10% 40%,
+    url("./images/ani_flower_03.png") no-repeat 70% 30%;
 }
 
 .visual::after {
-  background: url('./images/ani_flower_02.png') no-repeat 40% 30%,
-    url('./images/ani_flower_04.png') no-repeat 90% 0;
+  background: url("./images/ani_flower_02.png") no-repeat 40% 30%,
+    url("./images/ani_flower_04.png") no-repeat 90% 0;
   animation-delay: 1000ms;
 }
 
 .visual-text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   animation: moveEffect 600ms ease-in-out forwards;
   /* animation-name: moveEffect; */
   /* animation-duration: 400ms; */
@@ -420,8 +429,8 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 .sign a::before {
   color: #e85e2c;
-  content: '\e804';
-  font-family: 'fontello';
+  content: "\e804";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
@@ -445,7 +454,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 .validation-list a {
-  background: url('./images/validation_icon.png') no-repeat 25px 50%,
+  background: url("./images/validation_icon.png") no-repeat 25px 50%,
     #ccc linear-gradient(to bottom, #ccc 0%, #ccc 30%, #eee 90%, #eee 100%);
   padding: 8px 48px;
   border-radius: 20px;
@@ -464,6 +473,55 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   color: #f00;
 }
 
+/** 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.term-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list {
+  background-color: yellow;
+  margin-top: 10px;
+}
+
+.term-list div {
+  background-color: pink;
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list-subject {
+  background-color: lime;
+  float: right;
+  width: 145px;
+  color: #296897;
+  font-weight: 600;
+}
+
+.term-list-thumbnail {
+  background-color: skyblue;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  /** 여백을 없애기 위한 코드 */
+  vertical-align: middle;
+}
+
+.term-list-brief {
+  background-color: coral;
+  float: right;
+  width: 145px;
+}
+
 /** 슬로건 */
 .slogan {
   background: skyblue;
@@ -472,13 +530,13 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 /** 푸터 */
 .footer {
-  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  background: #ccc
+    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 
 .footer-inner {
   height: 15vh;
   background: silver;
 }
-
 
 /* 너 바뀌었니? */
