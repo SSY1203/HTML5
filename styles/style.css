@@ -579,6 +579,78 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   font-size: 1.2rem;
 }
 
+/** 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #333;
+  border-bottom: none;
+}
+
+.is-select.tab {
+  background-color: #fff;
+  color: #e85e2c;
+  border-color: currentColor currentColor #fff currentColor;
+}
+
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+/** 글자 수 넘을 때, 글 자르고 ... 처리하는 법 */
+.board-list a {
+  flex-grow: 1;
+  /** 줄바꿈 금지시키는 코드 */
+  white-space: nowrap;
+  /** 넘어가면 자르기 */
+  overflow: hidden;
+  /** 위 넘치는 걸 자연스럽게 만들려면 text-overflow */
+  text-overflow: ellipsis;
+}
+
+.board-list time {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.board-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  /** 클릭 영역을 넓히기 위해 padding을 줌 */
+  padding: 8px;
+  font-weight: 500;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 40%, 1);
+}
+
 /** 슬로건 */
 .slogan {
   background: skyblue;
