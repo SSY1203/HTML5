@@ -552,9 +552,9 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 .form-group-label {
-  font-weight: 500;
-  white-space: nowrap;
+  flex-shrink: 0;
   margin-right: 10px;
+  font-weight: 500;
 }
 
 .form-group-input {
