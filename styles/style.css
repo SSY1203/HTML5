@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./fonts.css);
+@import url(./fontello.css);
 
 /** 숨김 콘텐츠 */
 .a11y-hidden,
@@ -339,12 +340,10 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 .group2 {
-  background-color: salmon;
   width: 380px;
 }
 
 .group3 {
-  background-color: gold;
   width: 190px;
 }
 
@@ -531,6 +530,54 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   float: right;
 }
 
+/** 검색 폼 */
+.search-form {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 15px 15px 0 0;
+  border: 1px solid #aaa;
+  padding: 15px 25px 10px;
+}
+
+.search-form-inner {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form-group {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.form-group-label {
+  font-weight: 500;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.form-group-input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+  flex-grow: 1;
+  /* min-width: 0;
+  max-width: 100%; */
+}
+
+.search-button {
+  white-space: nowrap;
+  background-color: #212121;
+  color: #fff;
+  height: 24px;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
 /** 슬로건 */
 .slogan {
   background: skyblue;
@@ -547,5 +594,3 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   height: 15vh;
   background: silver;
 }
-
-/* 너 바뀌었니? */
