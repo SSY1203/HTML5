@@ -563,6 +563,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   height: 24px;
   padding: 1px 1px 1px 5px;
   flex-grow: 1;
+  font-size: 1.2rem;
   /* min-width: 0;
   max-width: 100%; */
 }
