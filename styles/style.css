@@ -1,7 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
-@import url(./fonts.css);
 @import url(./fontello.css);
+@import url(./module.css);
 
 /** 숨김 콘텐츠 */
 .a11y-hidden,
@@ -670,7 +670,6 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 .news-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #e85e2c;
 }
 
 .news-item {
