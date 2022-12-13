@@ -249,6 +249,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
     color: hsla(0, 0%, 0%, 0);
     transform: translate(0, 0);
   }
+
   100% {
     font-size: 24px;
     color: hsla(0, 0%, 0%, 1);
@@ -726,6 +727,58 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 .icon-plus::before {
   color: hsla(110, 50%, 40%, 1);
+}
+
+/** 신규 이벤트 및 관련 사이트 */
+.event {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+}
+
+.event-button-wrapper {
+  background-color: yellow;
+  height: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  /** flex 아이템끼리 차이 - 익스플로러는 지원 안됨 */
+  gap: 5px;
+}
+
+/* IR 기법 -> Image Replacement */
+.event-button {
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 18px 0 0 0;
+  background: url("./images/back_forward.png") no-repeat;
+}
+
+.event-button:focus {
+  outline-offset: -2px;
+}
+
+.event-button-next {
+  background-position: -36px 0;
+}
+
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+
+.event-brief {
+  line-height: 1.5;
+}
+
+.related {
+  margin-top: 10px;
+}
+
+.related-list {
+  background-color: #fff;
+  margin-top: 10px;
 }
 
 /** 슬로건 */
