@@ -712,6 +712,12 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   text-align: center;
 }
 
+.news-item-thumbnail img {
+  /* x축 y축 흐림도 번짐도*/
+  box-shadow: 0 15px 10px 5px #ccc;
+  margin-bottom: 15px;
+}
+
 .news-more {
   position: absolute;
   padding: 8px;
