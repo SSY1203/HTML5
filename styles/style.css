@@ -788,20 +788,30 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 .related-list {
   background-color: #fff;
   border: 1px solid #aaa;
-  border-radius: 35px 0;
+  height: 27px;
+  border-radius: 5px;
   margin-top: 10px;
-  /* transition-property: background-color, border-radius;
-  transition-duration: 2000ms, 2000ms;
-  transition-delay: 0ms, 2000ms;
-  transition-timing-function: ease-in-out; */
-  transition: background-color 2000ms 0ms ease-in-out,
-    border-radius 2000ms 2000ms ease-in-out;
+  transition: height 400ms 0ms ease-in-out, padding 400ms 400ms ease-in-out;
+  overflow: hidden;
 }
 
 .related-list:hover,
 .related-list:focus {
-  background-color: #ff0;
-  border-radius: 0 35px;
+  height: 147px;
+  padding-top: 10px;
+}
+
+.related-list li {
+  padding: 0 5px;
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.related-list a {
+  flex-grow: 1;
+  padding: 0 10px;
 }
 
 /** 슬로건 */
