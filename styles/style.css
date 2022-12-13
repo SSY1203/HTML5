@@ -651,6 +651,13 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   color: hsla(110, 50%, 40%, 1);
 }
 
+/** 새소식 */
+.news-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e85e2c;
+}
+
 /** 슬로건 */
 .slogan {
   background: skyblue;
