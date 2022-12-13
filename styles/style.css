@@ -731,17 +731,21 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 /** 신규 이벤트 및 관련 사이트 */
 .event {
-  position: relative;
   border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+.event-title {
+  display: inline-block;
 }
 
 .event-button-wrapper {
-  background-color: yellow;
   height: 20px;
   overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  float: right;
   /** flex 아이템끼리 차이 - 익스플로러는 지원 안됨 */
   gap: 5px;
 }
@@ -768,6 +772,11 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   margin: 10px 0;
 }
 
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
 .event-brief {
   line-height: 1.5;
 }
@@ -778,7 +787,21 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 .related-list {
   background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 35px 0;
   margin-top: 10px;
+  /* transition-property: background-color, border-radius;
+  transition-duration: 2000ms, 2000ms;
+  transition-delay: 0ms, 2000ms;
+  transition-timing-function: ease-in-out; */
+  transition: background-color 2000ms 0ms ease-in-out,
+    border-radius 2000ms 2000ms ease-in-out;
+}
+
+.related-list:hover,
+.related-list:focus {
+  background-color: #ff0;
+  border-radius: 0 35px;
 }
 
 /** 슬로건 */
