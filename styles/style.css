@@ -303,6 +303,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 }
 
 .visual-text {
+  display: inline-block;
   font-family: Georgia, "Times New Roman", Times, serif;
   animation: moveEffect 600ms ease-in-out forwards;
   /* animation-name: moveEffect; */
@@ -788,30 +789,31 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 .related-list {
   background-color: #fff;
   border: 1px solid #aaa;
-  height: 27px;
   border-radius: 5px;
   margin-top: 10px;
-  transition: height 400ms 0ms ease-in-out, padding 400ms 400ms ease-in-out;
+  height: 27px;
   overflow: hidden;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+}
+
+.related-list li {
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.related-list a {
+  flex-grow: 1;
+  padding: 0 10px;
 }
 
 .related-list:hover,
 .related-list:focus {
   height: 147px;
   padding-top: 10px;
-}
-
-.related-list li {
-  padding: 0 5px;
-  height: 25px;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-
-.related-list a {
-  flex-grow: 1;
-  padding: 0 10px;
+  padding-bottom: 10px;
 }
 
 /** 슬로건 */
