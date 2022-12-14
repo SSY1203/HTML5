@@ -101,16 +101,19 @@ body {
 }
 
 .event {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   border-bottom: 1px solid #aaa;
 }
 
+.event-title {
+  /* background-color: pink; */
+  float: left;
+}
+
 .event-button-wrapper {
+  /* background-color: yellow; */
   display: flex;
   flex-flow: row nowrap;
-  align-items: flex-start;
+  justify-content: flex-end;
   gap: 5px;
 }
 
