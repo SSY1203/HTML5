@@ -877,9 +877,44 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
 
 /* 슬로건 */
 .slogan {
-  background: skyblue;
-  /* 다른 브라우저에서 flow-root가 적용되지 않는 경우를 대비한 안전 장치 */
+  /* 다른 브라우저에서 flow-root를 지원하지 않는 경우를 대비한 안전 장치 */
   clear: both;
+  position: relative;
+  padding: 15px 100px 15px 180px;
+}
+
+.slogan-title {
+  width: 110px;
+  height: 83px;
+  text-align: center;
+  line-height: 83px;
+  position: absolute;
+  bottom: -25px;
+  left: 35px;
+}
+
+.slogan-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/coffee.png") no-repeat 0 0;
+}
+
+.slogan-content {
+  color: #a09784;
+}
+
+.slogan-content q::before {
+  display: inline-block;
+  font-size: 3rem;
+  transform: translateY(10px);
+}
+
+.slogan-content q::after {
+  content: "";
 }
 
 /* 푸터 */
