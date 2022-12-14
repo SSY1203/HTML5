@@ -3,7 +3,7 @@
 @import url(./fontello.css);
 @import url(./module.css);
 
-/** 숨김 콘텐츠 */
+/* 숨김 콘텐츠 */
 .a11y-hidden,
 legend {
   position: absolute;
@@ -16,7 +16,7 @@ legend {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-/** 기본 스타일 */
+/* 기본 스타일 */
 /** 모든 요소의 첫 번째 자식 생성 후 상속 - before, 마지막 자식 생성 후 상속 - after */
 *,
 *::before,
@@ -28,13 +28,13 @@ html {
   font-size: 10px;
 }
 
-/** 링크 스타일 */
+/* 링크 스타일 */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/** 본문 스타일 */
+/* 본문 스타일 */
 body {
   /** em, rem 단위를 사용해보기 */
   color: #212121;
@@ -53,7 +53,7 @@ body {
       repeat 0 0;
 }
 
-/** 레이아웃 */
+/* 레이아웃 */
 .header,
 .visual,
 .main,
@@ -64,7 +64,7 @@ body {
   margin: 0 auto;
 }
 
-/** 헤더 */
+/* 헤더 */
 .header {
   background: #fff;
   padding: 0 30px;
@@ -72,7 +72,7 @@ body {
   position: relative;
 }
 
-/** 로고 */
+/* 로고 */
 .logo {
   position: absolute;
   top: 45px;
@@ -80,7 +80,7 @@ body {
   z-index: 1;
 }
 
-/** 텍스트 링크 모음 */
+/* 텍스트 링크 모음 */
 .member {
   text-align: right;
   padding: 4px 0;
@@ -152,7 +152,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   border-left: 2px solid #fff;
 }
 
-/** 구체성 점수 → 10점 */
+/* 구체성 점수 → 10점 */
 .menu-button {
   border: 0;
   background: transparent;
@@ -164,7 +164,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
-/** 구체성 점수 → 20점 */
+/* 구체성 점수 → 20점 */
 .is-active .menu-button {
   color: #ff0;
 }
@@ -182,14 +182,14 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   display: none;
 }
 
-/** 왼쪽 기준으로 sub-menu를 정렬 */
+/* 왼쪽 기준으로 sub-menu를 정렬 */
 .menu-html,
 .menu-css,
 .menu-standards {
   left: 0;
 }
 
-/** 오른쪽 기준으로 sub-menu를 정렬 */
+/* 오른쪽 기준으로 sub-menu를 정렬 */
 .menu-accessibility,
 .menu-qna,
 .menu-archive {
@@ -226,7 +226,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   /** 아래 font-smoothing 속성은 firefox 브라우저에도 적용하기 위한 방법이다. */
   -moz-osx-font-smoothing: grayscale;
 }
-/**마우스를 올렸을 때 선택자로 가란 뜻 */
+/*마우스를 올렸을 때 선택자로 가란 뜻 */
 .sub-menu a:hover::before,
 .sub-menu a:focus::before {
   content: "\e801";
@@ -242,7 +242,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   color: #f00;
 }
 
-/** 비주얼 */
+/* 비주얼 */
 @keyframes moveEffect {
   0% {
     font-size: 12px;
@@ -730,7 +730,7 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   color: hsla(110, 50%, 40%, 1);
 }
 
-/** 신규 이벤트 및 관련 사이트 */
+/* 신규 이벤트 및 관련 사이트 */
 .event {
   border-bottom: 1px solid #aaa;
   position: relative;
@@ -816,13 +816,13 @@ background → 위 속성 전부 함축, 공백으로 값과 값 사이를 구�
   padding-bottom: 10px;
 }
 
-/** 슬로건 */
+/* 슬로건 */
 .slogan {
   background: rgb(42, 43, 43);
   height: 10vh;
 }
 
-/** 푸터 */
+/* 푸터 */
 .footer {
   background: #ccc
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
