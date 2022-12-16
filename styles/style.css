@@ -2,6 +2,13 @@
 @import url(./reset.css);
 @import url(./fontello.css);
 
+/* 숨김 콘텐츠 */
+.a11y-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* 기본 스타일 */
 *,
 *::before,
