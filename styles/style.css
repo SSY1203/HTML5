@@ -56,7 +56,6 @@ body {
 }
 
 .member {
-  background-color: skyblue;
   position: absolute;
   top: 0;
   right: 0;
@@ -64,10 +63,15 @@ body {
 
 .member li {
   float: left;
+  text-transform: uppercase;
+  padding: 0 4px;
 }
 
-.member li::before {
-  content: ":";
+.member span {
+}
+
+.member a {
+  padding: 6px 8px;
 }
 
 /* 비주얼 */
